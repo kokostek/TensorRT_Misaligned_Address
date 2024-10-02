@@ -1,0 +1,156 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v100500] [b18] # trtexec.exe --onnx=bias=True_groups=16.onnx --saveEngine=model.engine --minShapes=input:16x256x4x4 --optShapes=input:16x256x4x4 --maxShapes=input:16x256x4x4 --fp16
+[10/02/2024-16:14:07] [I] === Model Options ===
+[10/02/2024-16:14:07] [I] Format: ONNX
+[10/02/2024-16:14:07] [I] Model: bias=True_groups=16.onnx
+[10/02/2024-16:14:07] [I] Output:
+[10/02/2024-16:14:07] [I] === Build Options ===
+[10/02/2024-16:14:07] [I] Memory Pools: workspace: default, dlaSRAM: default, dlaLocalDRAM: default, dlaGlobalDRAM: default, tacticSharedMem: default
+[10/02/2024-16:14:07] [I] avgTiming: 8
+[10/02/2024-16:14:07] [I] Precision: FP32+FP16
+[10/02/2024-16:14:07] [I] LayerPrecisions: 
+[10/02/2024-16:14:07] [I] Layer Device Types: 
+[10/02/2024-16:14:07] [I] Calibration: 
+[10/02/2024-16:14:07] [I] Refit: Disabled
+[10/02/2024-16:14:07] [I] Strip weights: Disabled
+[10/02/2024-16:14:07] [I] Version Compatible: Disabled
+[10/02/2024-16:14:07] [I] ONNX Plugin InstanceNorm: Disabled
+[10/02/2024-16:14:07] [I] TensorRT runtime: full
+[10/02/2024-16:14:07] [I] Lean DLL Path: 
+[10/02/2024-16:14:07] [I] Tempfile Controls: { in_memory: allow, temporary: allow }
+[10/02/2024-16:14:07] [I] Exclude Lean Runtime: Disabled
+[10/02/2024-16:14:07] [I] Sparsity: Disabled
+[10/02/2024-16:14:07] [I] Safe mode: Disabled
+[10/02/2024-16:14:07] [I] Build DLA standalone loadable: Disabled
+[10/02/2024-16:14:07] [I] Allow GPU fallback for DLA: Disabled
+[10/02/2024-16:14:07] [I] DirectIO mode: Disabled
+[10/02/2024-16:14:07] [I] Restricted mode: Disabled
+[10/02/2024-16:14:07] [I] Skip inference: Disabled
+[10/02/2024-16:14:07] [I] Save engine: model.engine
+[10/02/2024-16:14:07] [I] Load engine: 
+[10/02/2024-16:14:07] [I] Profiling verbosity: 0
+[10/02/2024-16:14:07] [I] Tactic sources: Using default tactic sources
+[10/02/2024-16:14:07] [I] timingCacheMode: local
+[10/02/2024-16:14:07] [I] timingCacheFile: 
+[10/02/2024-16:14:07] [I] Enable Compilation Cache: Enabled
+[10/02/2024-16:14:07] [I] errorOnTimingCacheMiss: Disabled
+[10/02/2024-16:14:07] [I] Preview Features: Use default preview flags.
+[10/02/2024-16:14:07] [I] MaxAuxStreams: -1
+[10/02/2024-16:14:07] [I] BuilderOptimizationLevel: -1
+[10/02/2024-16:14:07] [I] MaxTactics: -1
+[10/02/2024-16:14:07] [I] Calibration Profile Index: 0
+[10/02/2024-16:14:07] [I] Weight Streaming: Disabled
+[10/02/2024-16:14:07] [I] Runtime Platform: Same As Build
+[10/02/2024-16:14:07] [I] Debug Tensors: 
+[10/02/2024-16:14:07] [I] Input(s)s format: fp32:CHW
+[10/02/2024-16:14:07] [I] Output(s)s format: fp32:CHW
+[10/02/2024-16:14:07] [I] Input build shape (profile 0): input=16x256x4x4+16x256x4x4+16x256x4x4
+[10/02/2024-16:14:07] [I] Input calibration shapes: model
+[10/02/2024-16:14:07] [I] === System Options ===
+[10/02/2024-16:14:07] [I] Device: 0
+[10/02/2024-16:14:07] [I] DLACore: 
+[10/02/2024-16:14:07] [I] Plugins:
+[10/02/2024-16:14:07] [I] setPluginsToSerialize:
+[10/02/2024-16:14:07] [I] dynamicPlugins:
+[10/02/2024-16:14:07] [I] ignoreParsedPluginLibs: 0
+[10/02/2024-16:14:07] [I] 
+[10/02/2024-16:14:07] [I] === Inference Options ===
+[10/02/2024-16:14:07] [I] Batch: Explicit
+[10/02/2024-16:14:07] [I] Input inference shape : input=16x256x4x4
+[10/02/2024-16:14:07] [I] Iterations: 10
+[10/02/2024-16:14:07] [I] Duration: 3s (+ 200ms warm up)
+[10/02/2024-16:14:07] [I] Sleep time: 0ms
+[10/02/2024-16:14:07] [I] Idle time: 0ms
+[10/02/2024-16:14:07] [I] Inference Streams: 1
+[10/02/2024-16:14:07] [I] ExposeDMA: Disabled
+[10/02/2024-16:14:07] [I] Data transfers: Enabled
+[10/02/2024-16:14:07] [I] Spin-wait: Disabled
+[10/02/2024-16:14:07] [I] Multithreading: Disabled
+[10/02/2024-16:14:07] [I] CUDA Graph: Disabled
+[10/02/2024-16:14:07] [I] Separate profiling: Disabled
+[10/02/2024-16:14:07] [I] Time Deserialize: Disabled
+[10/02/2024-16:14:07] [I] Time Refit: Disabled
+[10/02/2024-16:14:07] [I] NVTX verbosity: 0
+[10/02/2024-16:14:07] [I] Persistent Cache Ratio: 0
+[10/02/2024-16:14:07] [I] Optimization Profile Index: 0
+[10/02/2024-16:14:07] [I] Weight Streaming Budget: 100.000000%
+[10/02/2024-16:14:07] [I] Inputs:
+[10/02/2024-16:14:07] [I] Debug Tensor Save Destinations:
+[10/02/2024-16:14:07] [I] === Reporting Options ===
+[10/02/2024-16:14:07] [I] Verbose: Disabled
+[10/02/2024-16:14:07] [I] Averages: 10 inferences
+[10/02/2024-16:14:07] [I] Percentiles: 90,95,99
+[10/02/2024-16:14:07] [I] Dump refittable layers:Disabled
+[10/02/2024-16:14:07] [I] Dump output: Disabled
+[10/02/2024-16:14:07] [I] Profile: Disabled
+[10/02/2024-16:14:07] [I] Export timing to JSON file: 
+[10/02/2024-16:14:07] [I] Export output to JSON file: 
+[10/02/2024-16:14:07] [I] Export profile to JSON file: 
+[10/02/2024-16:14:07] [I] 
+[10/02/2024-16:14:07] [I] === Device Information ===
+[10/02/2024-16:14:07] [I] Available Devices: 
+[10/02/2024-16:14:07] [I]   Device 0: "NVIDIA GeForce RTX 2070 SUPER" UUID: GPU-5b365e86-4888-f2f3-4173-a2bcab7ab39d
+[10/02/2024-16:14:07] [I] Selected Device: NVIDIA GeForce RTX 2070 SUPER
+[10/02/2024-16:14:07] [I] Selected Device ID: 0
+[10/02/2024-16:14:07] [I] Selected Device UUID: GPU-5b365e86-4888-f2f3-4173-a2bcab7ab39d
+[10/02/2024-16:14:07] [I] Compute Capability: 7.5
+[10/02/2024-16:14:07] [I] SMs: 40
+[10/02/2024-16:14:07] [I] Device Global Memory: 8191 MiB
+[10/02/2024-16:14:07] [I] Shared Memory per SM: 64 KiB
+[10/02/2024-16:14:07] [I] Memory Bus Width: 256 bits (ECC disabled)
+[10/02/2024-16:14:07] [I] Application Compute Clock Rate: 1.77 GHz
+[10/02/2024-16:14:07] [I] Application Memory Clock Rate: 7.001 GHz
+[10/02/2024-16:14:07] [I] 
+[10/02/2024-16:14:07] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[10/02/2024-16:14:07] [I] 
+[10/02/2024-16:14:07] [I] TensorRT version: 10.5.0
+[10/02/2024-16:14:07] [I] Loading standard plugins
+[10/02/2024-16:14:08] [I] [TRT] [MemUsageChange] Init CUDA: CPU +384, GPU +0, now: CPU 13795, GPU 1559 (MiB)
+[10/02/2024-16:14:10] [I] [TRT] [MemUsageChange] Init builder kernel library: CPU +1365, GPU +188, now: CPU 15484, GPU 1747 (MiB)
+[10/02/2024-16:14:10] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See "Lazy Loading" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading
+[10/02/2024-16:14:10] [I] Start parsing network model.
+[10/02/2024-16:14:10] [I] [TRT] ----------------------------------------------------------------
+[10/02/2024-16:14:10] [I] [TRT] Input filename:   bias=True_groups=16.onnx
+[10/02/2024-16:14:10] [I] [TRT] ONNX IR version:  0.0.6
+[10/02/2024-16:14:10] [I] [TRT] Opset version:    11
+[10/02/2024-16:14:10] [I] [TRT] Producer name:    pytorch
+[10/02/2024-16:14:10] [I] [TRT] Producer version: 2.0.1
+[10/02/2024-16:14:10] [I] [TRT] Domain:           
+[10/02/2024-16:14:10] [I] [TRT] Model version:    0
+[10/02/2024-16:14:10] [I] [TRT] Doc string:       
+[10/02/2024-16:14:10] [I] [TRT] ----------------------------------------------------------------
+[10/02/2024-16:14:10] [I] Finished parsing network model. Parse time: 0.002056
+[10/02/2024-16:14:10] [I] Set shape of input tensor input for optimization profile 0 to: MIN=16x256x4x4 OPT=16x256x4x4 MAX=16x256x4x4
+[10/02/2024-16:14:10] [I] [TRT] BuilderFlag::kTF32 is set but hardware does not support TF32. Disabling TF32.
+[10/02/2024-16:14:10] [I] [TRT] BuilderFlag::kTF32 is set but hardware does not support TF32. Disabling TF32.
+[10/02/2024-16:14:10] [I] [TRT] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[10/02/2024-16:14:11] [E] Error[1]: [builderUtils.cpp::nvinfer1::builder::CommonRunnerProfiler::executeAndTimeIters::<lambda_d8116b4e82a61eaeb8dfd1b9ed18449d>::operator ()::928] Error Code 1: Cuda Runtime (misaligned address)
+[10/02/2024-16:14:11] [E] Error[1]: [resizingAllocator.cpp::nvinfer1::internal::ResizingAllocator::deallocate::114] Error Code 1: Cuda Runtime (misaligned address)
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x84062d29cac28548 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x8cb7f21c884843f4 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x44f0ab120cdb95df due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0xb33dfebb05c33935 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x651002a8d73048a1 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x1679a8ed82d4c75d due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x92dd5701de28e44b due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x682cff76ba5f2886 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0xbe01036568ac5912 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x00000000000003e8 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x00000000000003ea due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x0000000000000000 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x00000000000003e8 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x00000000000003ea due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x0000000000000000 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x00000000000003e8 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x00000000000003ea due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x0000000000000000 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x00000000000003e8 due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x00000000000003ea due to exception misaligned address
+[10/02/2024-16:14:11] [E] Error[9]: Error Code: 9: Skipping tactic 0x0000000000000000 due to exception misaligned address
+[10/02/2024-16:14:11] [I] [TRT] Detected 1 inputs and 1 output network tensors.
+[10/02/2024-16:14:11] [E] Error[1]: IBuilder::buildSerializedNetwork: Error Code 1: Cuda Runtime (no further information)
+[10/02/2024-16:14:11] [E] Engine could not be created from network
+[10/02/2024-16:14:11] [E] Building engine failed
+[10/02/2024-16:14:11] [E] Failed to create engine from model or file.
+[10/02/2024-16:14:11] [E] Engine set up failed
+&&&& FAILED TensorRT.trtexec [TensorRT v100500] [b18] # trtexec.exe --onnx=bias=True_groups=16.onnx --saveEngine=model.engine --minShapes=input:16x256x4x4 --optShapes=input:16x256x4x4 --maxShapes=input:16x256x4x4 --fp16
+^C
