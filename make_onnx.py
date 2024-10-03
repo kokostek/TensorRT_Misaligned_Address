@@ -3,7 +3,7 @@ import torch.onnx
 from torch import nn
 
 
-class SampleModel(torch.nn.Module):
+class SampleModel(nn.Module):
 
     def __init__(self, *, bias: bool, groups: int):
 
@@ -15,8 +15,7 @@ class SampleModel(torch.nn.Module):
             bias=bias, groups=groups)
 
     def forward(self, x):
-        x = self.conv(x)
-        return x
+        return self.conv(x)
 
 
 def main():
@@ -46,4 +45,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main() 
